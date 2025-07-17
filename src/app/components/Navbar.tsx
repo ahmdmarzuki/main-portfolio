@@ -1,4 +1,5 @@
 "use client";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
 
@@ -14,12 +15,7 @@ const Navbar = () => {
     <div className="flex flex-row justify-between w-screen">
       <div className="flex-1 flex items-center gap-6">
         <div className="bg-[#030303] w-[60px] h-[60px] flex justify-center items-center">
-          <Hamburger
-            color="#E9E9E9"
-            size={24}
-            toggle={setOpen}
-            toggled={open}
-          />
+          <SidebarTrigger className="text-white scale-170" />
         </div>
         <div className="text-2xl font-bold cursor-pointer">@ahmrrzz</div>
       </div>
