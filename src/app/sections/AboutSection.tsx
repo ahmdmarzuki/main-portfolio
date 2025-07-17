@@ -4,8 +4,8 @@ import Beams from "../components/Beams";
 
 const AboutSection = () => {
   return (
-    <div className="relative items-center h-[60vh] md:h-auto w-screen flex justify-start md:justify-end bg-black">
-      <div className="md:absolute px-[40px] py-[60px] md:py-0 md:pl-0 md:top-[180px] md:left-[80px] z-10 w-screen md:w-1/2 flex flex-col gap-10">
+    <div className="relative items-center h-[60vh] md:h-auto w-screen flex justify-start md:justify-end bg-accent">
+      <div className="md:absolute px-[40px] py-[60px] md:py-0 md:pl-0 md:top-[180px] md:left-[80px] z-20 w-screen md:w-1/2 flex flex-col gap-10">
         <h1 className="text-primary text-4xl font-bold">About Me</h1>
         <div className="flex flex-col gap-4">
           <span className="text-primary line-clamp-6 md:line-clamp-none overflow-auto">
@@ -31,9 +31,11 @@ const AboutSection = () => {
         </div>
       </div>
       <div
-        className="hidden md:visible md:flex"
-        style={{ width: "70%", height: "100vh", position: "relative" }}
+        className="relative hidden md:visible md:flex opacity-30"
+        style={{ width: "100%", height: "100vh", position: "relative" }}
       >
+        <div className="absolute w-full h-full  z-10 bg-gradient-to-b from-zinc-900/0 to-zinc-900"></div>
+        <div className="absolute w-full h-full  z-10 bg-gradient-to-l from-zinc-900/0 to-zinc-900"></div>
         <Beams
           beamWidth={4}
           beamHeight={17}

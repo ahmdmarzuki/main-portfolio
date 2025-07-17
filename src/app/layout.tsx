@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ReactLenis from "lenis/react";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,11 +32,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ReactLenis root options={{ lerp: 0.05 }}>
-          <Navbar />
-          {children}
-          <Footer />
-        </ReactLenis>
+        <SidebarProvider>
+          <AppSidebar />
+          <main className="overflow-hidden">
+            <ReactLenis root options={{ lerp: 0.05 }}>
+              <Navbar />
+              {children}
+              <Footer />
+            </ReactLenis>
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );

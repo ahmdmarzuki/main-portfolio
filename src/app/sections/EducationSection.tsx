@@ -2,7 +2,7 @@ import React from "react";
 
 const EducationSection = () => {
   return (
-    <div className="relative w-screen bg-black text-primary min-h-screen gap-10 flex flex-col items-start px-[40px] md:px-[80px]">
+    <div className="relative w-screen bg-accent text-primary min-h-screen gap-10 flex flex-col items-start px-[40px] md:px-[80px]">
       <h1 className="md:absolute text-primary text-4xl font-bold md:-top-24">
         Education
       </h1>

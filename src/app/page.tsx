@@ -8,11 +8,13 @@ export default function Home() {
   return (
     <div>
       <HomeSection />
-      <ScrollVelocity
-        texts={["Software Engineer", "Product Designer"]}
-        velocity={30}
-        className="custom-scroll-text"
-      />
+      <div className="w-screen">
+        <ScrollVelocity
+          texts={["Software Engineer", "Product Designer"]}
+          velocity={30}
+          className="custom-scroll-text"
+        />
+      </div>
       <AboutSection />
       <EducationSection />
     </div>
