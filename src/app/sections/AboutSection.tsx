@@ -4,24 +4,40 @@ import Beams from "../components/Beams";
 
 const AboutSection = () => {
   return (
-    <div className="relative items-end w-screen flex justify-end bg-accent">
-      <div className="absolute top-[180px] left-[80px] z-10 w-1/2 flex flex-col gap-10">
+    <div className="relative items-center h-[60vh] md:h-auto w-screen flex justify-start md:justify-end bg-black">
+      <div className="md:absolute px-[40px] py-[60px] md:py-0 md:pl-0 md:top-[180px] md:left-[80px] z-10 w-screen md:w-1/2 flex flex-col gap-10">
         <h1 className="text-primary text-4xl font-bold">About Me</h1>
-        <span className="text-primary ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed mollitia
-          distinctio soluta exercitationem possimus delectus, laudantium non
-          dolorum cupiditate rerum facere consequatur sint placeat officiis
-          quibusdam laborum aspernatur corporis quaerat. Lorem ipsum, dolor sit
-          amet consectetur adipisicing elit. Hic dignissimos facere cumque nam!
-          Ipsam sapiente nostrum dignissimos iste beatae excepturi id. Mollitia
-          inventore deserunt harum odio aliquid qui totam accusantium?
-        </span>
+        <div className="flex flex-col gap-4">
+          <span className="text-primary line-clamp-6 md:line-clamp-none overflow-auto">
+            Hi, I'm Marzuki! driven by passion for technology. With experience
+            in Mobile App Development (flutter), Web Development, Robotics,
+            UI/UX Design, and CAD Design <br />
+            <br />
+            One of the most rewarding of my journey as has been working with
+            Unit Robotika ITB (URO ITB) at Programming Departement. I've learned
+            a lot of robotic things such as Robot Operating System, Gazeebo
+            Simulation, Computer Vision, and Machine Learning.
+            <br />
+            <br />
+            While I'm proud of the progress i've made, I'm continually inspired
+            by the chance to grow and learn with each new project. I strongly
+            believe in the power of collaboration, curiousity, and the desire to
+            make possitive impact. <br />
+            <br />
+            If you're looking to create meaningful change and foster strong
+            partnership for your company, I'd love to connect and hear your
+            story. Togather we can achieve great things!
+          </span>
+        </div>
       </div>
-      <div style={{ width: "60%", height: "100vh", position: "relative" }}>
+      <div
+        className="hidden md:visible md:flex"
+        style={{ width: "70%", height: "100vh", position: "relative" }}
+      >
         <Beams
-          beamWidth={2}
-          beamHeight={15}
-          beamNumber={12}
+          beamWidth={4}
+          beamHeight={17}
+          beamNumber={7}
           lightColor="#ffffff"
           speed={2}
           noiseIntensity={1.75}
